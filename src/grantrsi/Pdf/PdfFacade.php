@@ -1,4 +1,4 @@
-<?php namespace tibonilab\Pdf;
+<?php namespace grantrsi\Pdf;
 
 use Illuminate\Support\Facades\Facade;
 
