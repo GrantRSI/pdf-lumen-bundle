@@ -18,9 +18,9 @@ class PdfServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['pdf'] = $this->app->singleton(function($app)
+		$this->app['pdf'] = $this->app->singleton('grant\Pdf', function($app)
 		{
-			return new Pdf;
+			return new grant\Pdf($app->make('grant\Pdf'));
 		});
 	}
 
